@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team 17</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <h1>Senior Project</h1>
+
+    <h2>Real Time data:</h2>
+    <div>
+        <p id="realTimeData"></p>
+    </div>
+    <h2>Data history line charts:</h2>
+    <div>
+        <canvas id="voltageChart"></canvas>
+    </div>
+    <div>
+        <canvas id="temperatureChart"></canvas>
+    </div>
+    <div>
+        <canvas id="signalChart"></canvas>
+    </div>
+    <div>
+        <canvas id="batteryChart"></canvas>
+    </div>
+
+    <h2>Submit Valve and Switch Values:</h2>
+    <form id="inputForm">
+        <label for="valve">Valve:</label>
+        <select id="valve" name="valve">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select>
+        <br><br>
+        <label for="switch">Switch:</label>
+        <select id="switch" name="switch">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Add the Chart.js library script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add the script.js file -->
+    <script src="./script.js"></script>
+</body>
+</html>
